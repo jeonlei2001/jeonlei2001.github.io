@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="stylesA.css" />
+    <!-- <link rel="stylesheet" href="stylesA.css" /> -->
     <script
       src="https://kit.fontawesome.com/9882aa9097.js"
       crossorigin="anonymous"
@@ -57,6 +57,16 @@
           <div class="four">
             <figure>
               <img src="pic-cover.jpg" alt="" srcset="" id="image-pic" />
+              <p
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  color: #01587a;
+                "
+              >
+                Hover on Me!
+              </p>
               <figcaption hidden>
                 <i
                   >“True courage is pursuing your dream, even when everyone else
@@ -72,46 +82,30 @@
         <header id="two">
           <div id="header-one_1">
             <img id="cover_image_2" src="cover1.jpg" alt="" srcset="" />
+            <div id="description">
+              <p>
+                <i><strong>Click</strong> the photo to see more</i>
+              </p>
+              <p>
+                <i><strong>Double Click</strong> the photo to see more</i>
+              </p>
+            </div>
           </div>
           <div id="header-one_2">
-            <div class="card" >
-              <img src="test1.jpg" alt="" class="test-pics"/>
-              <h4>Name 1</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Doloribus aspernatur tenetur commodi quae dolorem porro nam,
-                consectetur saepe laudantium quisquam officiis autem illum, quo
-                recusandae accusantium asperiores. Magnam alias blanditiis
-                aspernatur. At, incidunt aliquam, eaque ipsa impedit distinctio
-                nam, temporibus in esse laborum perferendis voluptatum placeat
-                unde ipsum deserunt! Rem!
-              </p>
+            <div class="card">
+              <img src="test1.jpg" alt="" class="test-pics" />
+              <h4>Nathaniel dela Cruz</h4>
+              <p>"I like your style."</p>
             </div>
             <div class="card">
               <img src="test2.jpg" alt="" class="test-pics" />
-              <h4>Name 2</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Doloribus aspernatur tenetur commodi quae dolorem porro nam,
-                consectetur saepe laudantium quisquam officiis autem illum, quo
-                recusandae accusantium asperiores. Magnam alias blanditiis
-                aspernatur. At, incidunt aliquam, eaque ipsa impedit distinctio
-                nam, temporibus in esse laborum perferendis voluptatum placeat
-                unde ipsum deserunt! Rem!
-              </p>
+              <h4>James Garcia</h4>
+              <p>"You have the best laugh."</p>
             </div>
             <div class="card">
               <img src="test3.jpg" alt="" class="test-pics" />
-              <h4>Name 3</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Doloribus aspernatur tenetur commodi quae dolorem porro nam,
-                consectetur saepe laudantium quisquam officiis autem illum, quo
-                recusandae accusantium asperiores. Magnam alias blanditiis
-                aspernatur. At, incidunt aliquam, eaque ipsa impedit distinctio
-                nam, temporibus in esse laborum perferendis voluptatum placeat
-                unde ipsum deserunt! Rem!
-              </p>
+              <h4>Althea Reyes</h4>
+              <p>"You deserve a hug right now."</p>
             </div>
           </div>
         </header>
@@ -193,16 +187,19 @@
 </html>
 <script>
   $(document).ready(function () {
+    $("#header-one_2").hide();
     $("#image-pic").hover(function () {
       $("figcaption").fadeIn("slow");
     });
     $("#image-pic").mouseout(function () {
       $("figcaption").fadeOut("slow");
     });
-    // $("#cover_image_2").click(function () {
-    //   $("#header-one_2").show();
-    //   $(".card").show();
-    // });
+    $("img#cover_image_2").click(function () {
+      $("#header-one_2").show();
+    });
+    $("img#cover_image_2").dblclick(function () {
+      window.location.href = "https://www.linkedin.com/in/john-rey-c-13950521a";
+    });
     $("#image-button").click(function () {
       $("#cover_image").animate(
         {

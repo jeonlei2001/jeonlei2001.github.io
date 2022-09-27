@@ -192,15 +192,25 @@ div#header-one_2 {
 div#header-one_2 > div.card {
   padding: 5px;
   margin: 5px;
+  border-radius: 20px;
   background-color: white;
   display: flex;
+  width: 33%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
 .test-pics {
   width: 50%;
   border-radius: 50%;
+  margin: 20px 0;
 }
 button {
   display: block;
@@ -343,6 +353,7 @@ footer > ul > li {
   article#article-two,
   div#main-page > div.two,
   div#main-page > div.four,
+  div#header-one_2,
   #additional-page,
   footer {
     display: flex;
