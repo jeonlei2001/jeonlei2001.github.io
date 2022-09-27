@@ -26,7 +26,7 @@
     <main>
       <!-- for top page -->
       <section>
-        <header>
+        <header id="one">
           <div id="header-one">
             <h4 id="header-title">HI. 🙌</h4>
             <p>I'm JOHN, 20.</p>
@@ -68,6 +68,54 @@
         </div>
       </article>
       <!-- for third page -->
+      <section>
+        <header id="two">
+          <div id="header-one_1">
+            <img id="cover_image_2" src="cover1.jpg" alt="" srcset="" />
+          </div>
+          <div id="header-one_2">
+            <div class="card" >
+              <img src="test1.jpg" alt="" class="test-pics"/>
+              <h4>Name 1</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus aspernatur tenetur commodi quae dolorem porro nam,
+                consectetur saepe laudantium quisquam officiis autem illum, quo
+                recusandae accusantium asperiores. Magnam alias blanditiis
+                aspernatur. At, incidunt aliquam, eaque ipsa impedit distinctio
+                nam, temporibus in esse laborum perferendis voluptatum placeat
+                unde ipsum deserunt! Rem!
+              </p>
+            </div>
+            <div class="card">
+              <img src="test2.jpg" alt="" class="test-pics" />
+              <h4>Name 2</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus aspernatur tenetur commodi quae dolorem porro nam,
+                consectetur saepe laudantium quisquam officiis autem illum, quo
+                recusandae accusantium asperiores. Magnam alias blanditiis
+                aspernatur. At, incidunt aliquam, eaque ipsa impedit distinctio
+                nam, temporibus in esse laborum perferendis voluptatum placeat
+                unde ipsum deserunt! Rem!
+              </p>
+            </div>
+            <div class="card">
+              <img src="test3.jpg" alt="" class="test-pics" />
+              <h4>Name 3</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Doloribus aspernatur tenetur commodi quae dolorem porro nam,
+                consectetur saepe laudantium quisquam officiis autem illum, quo
+                recusandae accusantium asperiores. Magnam alias blanditiis
+                aspernatur. At, incidunt aliquam, eaque ipsa impedit distinctio
+                nam, temporibus in esse laborum perferendis voluptatum placeat
+                unde ipsum deserunt! Rem!
+              </p>
+            </div>
+          </div>
+        </header>
+      </section>
       <article id="article-two">
         <div id="additional-page">
           <div class="one">
@@ -151,10 +199,14 @@
     $("#image-pic").mouseout(function () {
       $("figcaption").fadeOut("slow");
     });
+    // $("#cover_image_2").click(function () {
+    //   $("#header-one_2").show();
+    //   $(".card").show();
+    // });
     $("#image-button").click(function () {
       $("#cover_image").animate(
         {
-          width: "80%",
+          width: "90%",
         },
         "slow"
       );
@@ -166,7 +218,7 @@
       );
       $("#cover_image").animate(
         {
-          width: "75%",
+          width: "85%",
         },
         "slow"
       );
