@@ -64,6 +64,16 @@ img {
   padding: 25px;
   margin: 20px;
 }
+.experiences_school-info{
+  display: flex;
+  flex-direction: row;
+}
+.experiences_school-info > img {
+  width: 50px;
+  height: 100%;
+  padding-top: 5px;
+  margin: 10px;
+}
 
 /* --------------------------- */
 .contents {
@@ -79,6 +89,15 @@ img {
   text-align: center;
   border-right: 2px solid #efefef;
 }
+#skills_set2{
+  border: 1px solid gray;
+  margin-top: 10px;
+  padding: 10px;
+}
+#skill_set2>p{
+  text-align: center;
+
+}
 /* --------------------------- */
 .main {
   display: flex;
@@ -87,7 +106,10 @@ img {
   padding: 30px;
 }
 .main > div > h3 {
-  margin: 15px 50px;
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 2px;
 }
 /* --------------------------- */
 /* --------------------------- */
