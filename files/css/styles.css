@@ -23,18 +23,27 @@ h1 {
   font-size: 62px;
   text-transform: uppercase;
 }
-h2,
-h3 {
+h2, h3, h4, h5 {
   font-family: 'Archivo Narrow', sans-serif;
 }
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
   text-transform: uppercase;
 }
+h3{
+  font-size: 1.25em;
+}
+h4{
+  font-size: 1.125em;
+}
+h5{
+  font-size: 1em;
+}
+
 p, ul>li, li {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   padding: 5px;
   letter-spacing: 1px;
   text-align: left;
@@ -86,8 +95,13 @@ img {
   flex-direction: column;
   width: 33%;
   padding: 30px;
-  text-align: center;
   border-right: 2px solid #efefef;
+}
+.side > div > h3{
+  text-align: center;
+  background-color: #efefef;
+  border-radius: 10px;
+  padding: 2px;
 }
 #skills_set2{
   border: 1px solid gray;
@@ -95,8 +109,9 @@ img {
   padding: 10px;
 }
 #skill_set2>p{
+  display: block;
   text-align: center;
-
+  margin: auto;
 }
 /* --------------------------- */
 .main {
@@ -112,4 +127,13 @@ img {
   padding: 2px;
 }
 /* --------------------------- */
+@media only screen and (max-width: 768px){
+  main, #main-content, .header, .contents, .side, .main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+}
 /* --------------------------- */
