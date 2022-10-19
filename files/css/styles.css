@@ -32,7 +32,7 @@ h2 {
   font-weight: 700;
   text-transform: uppercase;
 }
-p {
+p, ul>li, li {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   padding: 5px;
@@ -59,14 +59,12 @@ img {
   text-align: left;
   border-bottom: 2px solid #efefef;
 }
-figure {
-  max-width: 24.75%;
-}
 #header-info {
   max-width: 70%;
   padding: 25px;
   margin: 20px;
 }
+
 /* --------------------------- */
 .contents {
   display: flex;
@@ -76,7 +74,7 @@ figure {
 .side {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 33%;
   padding: 30px;
   text-align: center;
   border-right: 2px solid #efefef;
@@ -85,7 +83,7 @@ figure {
 .main {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 67%;
   padding: 30px;
 }
 .main > div > h3 {
